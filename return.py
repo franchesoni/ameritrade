@@ -27,6 +27,7 @@ current_balance = account["currentBalances"]
 current_amount = current_balance["liquidationValue"]
 
 # get transactions
+print("go back 4 years to get all transactions (I'm still young)")
 years = 4
 transactions = []  # all transactions
 for y in range(years):  # go back years
@@ -98,6 +99,7 @@ print('-'*30)
 print('absolute return:', (current_amount -  sum(t_amounts)) / sum(t_amounts))
 print('initial:', sum(t_amounts))
 print('final:', current_amount)
+print(f'return: {np.round(current_amount -  sum(t_amounts))} from {t_dates[0]} to {t_dates[-1]}')
 
 
 
